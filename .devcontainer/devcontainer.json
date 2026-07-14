@@ -1,0 +1,11 @@
+{
+  "name": "trauma-route-server",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "Trauma Route API",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postAttachCommand": "bash -lc 'curl -sf http://127.0.0.1:5000/ >/dev/null 2>&1 || (PORT=5000 npm start > /tmp/trauma-route-server.log 2>&1 &) '"
+}

@@ -1,0 +1,148 @@
+{
+  "_comment": "Injury tag -> required hospital capabilities. Based on ATLS (Advanced Trauma Life Support) triage categories. Each injury maps to required specialty/resource flags that must match the Hospital object's 'specialties' and resource fields.",
+  "_bedComment": "Bed availability is no longer a standalone 'icuBeds' resource. Each specialty in hospital.specialties now holds a bed count (number); a specialty is considered available when its count is > 0. Rules that used to also require 'icuBeds' relied on that same bed pool, so it was removed here to avoid double-counting.",
+  "head_injury": {
+    "label": "Head injury / concussion",
+    "requiredSpecialties": [
+      "neurosurgery"
+    ],
+    "requiredResources": [
+      "ctScan"
+    ],
+    "priority": "high"
+  },
+  "skull_fracture": {
+    "label": "Suspected skull fracture",
+    "requiredSpecialties": [
+      "neurosurgery"
+    ],
+    "requiredResources": [
+      "ctScan"
+    ],
+    "priority": "critical"
+  },
+  "spinal_injury": {
+    "label": "Suspected spinal injury",
+    "requiredSpecialties": [
+      "neurosurgery",
+      "orthopedics"
+    ],
+    "requiredResources": [
+      "ctScan"
+    ],
+    "priority": "critical"
+  },
+  "chest_penetrating": {
+    "label": "Penetrating chest wound",
+    "requiredSpecialties": [
+      "cardiothoracic",
+      "generalSurgery"
+    ],
+    "requiredResources": [
+      "otSlots"
+    ],
+    "priority": "critical"
+  },
+  "rib_fracture": {
+    "label": "Rib fracture",
+    "requiredSpecialties": [
+      "generalSurgery"
+    ],
+    "requiredResources": [],
+    "priority": "medium"
+  },
+  "internal_bleeding": {
+    "label": "Suspected internal bleeding",
+    "requiredSpecialties": [
+      "generalSurgery"
+    ],
+    "requiredResources": [
+      "otSlots",
+      "bloodBank"
+    ],
+    "priority": "critical"
+  },
+  "severe_burns": {
+    "label": "Severe burns (>20% body surface)",
+    "requiredSpecialties": [
+      "burnUnit",
+      "plasticSurgery"
+    ],
+    "requiredResources": [],
+    "priority": "critical"
+  },
+  "minor_burns": {
+    "label": "Minor/moderate burns",
+    "requiredSpecialties": [
+      "burnUnit"
+    ],
+    "requiredResources": [],
+    "priority": "medium"
+  },
+  "limb_fracture": {
+    "label": "Limb fracture",
+    "requiredSpecialties": [
+      "orthopedics"
+    ],
+    "requiredResources": [],
+    "priority": "medium"
+  },
+  "crush_injury": {
+    "label": "Crush injury",
+    "requiredSpecialties": [
+      "orthopedics",
+      "generalSurgery"
+    ],
+    "requiredResources": [
+      "otSlots"
+    ],
+    "priority": "high"
+  },
+  "amputation": {
+    "label": "Traumatic amputation",
+    "requiredSpecialties": [
+      "orthopedics",
+      "plasticSurgery"
+    ],
+    "requiredResources": [
+      "otSlots",
+      "bloodBank"
+    ],
+    "priority": "critical"
+  },
+  "cardiac_arrest": {
+    "label": "Cardiac arrest / suspected heart attack",
+    "requiredSpecialties": [
+      "cardiology"
+    ],
+    "requiredResources": [
+      "cathLab"
+    ],
+    "priority": "critical"
+  },
+  "unconscious_unresponsive": {
+    "label": "Unconscious / unresponsive patient",
+    "requiredSpecialties": [
+      "neurosurgery",
+      "generalSurgery"
+    ],
+    "requiredResources": [
+      "ctScan"
+    ],
+    "priority": "critical"
+  },
+  "_comorbidity_note": "Comorbidities below do NOT filter hospital routing. They attach as notes sent to the receiving hospital so the trauma team is aware before the patient arrives.",
+  "comorbidities": {
+    "diabetic": "Diabetic \u2014 monitor glucose during trauma care",
+    "cardiac_history": "Cardiac history \u2014 additional monitoring advised",
+    "pregnant": "Pregnant \u2014 notify obstetrics if available",
+    "elderly": "Elderly patient \u2014 consider frailty in treatment plan",
+    "blood_thinners": "On blood thinners \u2014 bleeding risk elevated",
+    "allergic_reactions": "Known drug/allergy history \u2014 check before administering medication"
+  },
+  "priorityWeights": {
+    "critical": 3,
+    "high": 2,
+    "medium": 1
+  }
+}

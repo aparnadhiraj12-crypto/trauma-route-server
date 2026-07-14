@@ -1,0 +1,232 @@
+[
+  {
+    "id": "hosp_001",
+    "name": "NIMS (Nizam's Institute of Medical Sciences)",
+    "location": {
+      "lat": 17.4239,
+      "lng": 78.4738
+    },
+    "specialties": {
+      "neurosurgery": 3,
+      "burnUnit": 0,
+      "cardiothoracic": 2,
+      "cardiology": 2,
+      "orthopedics": 2,
+      "generalSurgery": 3,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  },
+  {
+    "id": "hosp_002",
+    "name": "Osmania General Hospital",
+    "location": {
+      "lat": 17.3753,
+      "lng": 78.4744
+    },
+    "specialties": {
+      "neurosurgery": 2,
+      "burnUnit": 1,
+      "cardiothoracic": 0,
+      "cardiology": 1,
+      "orthopedics": 2,
+      "generalSurgery": 2,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": false,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  },
+  {
+    "id": "hosp_003",
+    "name": "CARE Hospitals, Banjara Hills",
+    "location": {
+      "lat": 17.4126,
+      "lng": 78.4487
+    },
+    "specialties": {
+      "neurosurgery": 4,
+      "burnUnit": 0,
+      "cardiothoracic": 3,
+      "cardiology": 3,
+      "orthopedics": 2,
+      "generalSurgery": 3,
+      "plasticSurgery": 2
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 3
+    }
+  },
+  {
+    "id": "hosp_004",
+    "name": "STAR Hospitals, Banjara Hills",
+    "location": {
+      "lat": 17.4143,
+      "lng": 78.4483
+    },
+    "specialties": {
+      "neurosurgery": 2,
+      "burnUnit": 2,
+      "cardiothoracic": 2,
+      "cardiology": 2,
+      "orthopedics": 2,
+      "generalSurgery": 2,
+      "plasticSurgery": 1
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  },
+  {
+    "id": "hosp_005",
+    "name": "KIMS Hospitals, Secunderabad",
+    "location": {
+      "lat": 17.4399,
+      "lng": 78.4983
+    },
+    "specialties": {
+      "neurosurgery": 3,
+      "burnUnit": 0,
+      "cardiothoracic": 3,
+      "cardiology": 3,
+      "orthopedics": 2,
+      "generalSurgery": 3,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 3
+    }
+  },
+  {
+    "id": "hosp_006",
+    "name": "AIG Hospitals, Gachibowli",
+    "location": {
+      "lat": 17.4239,
+      "lng": 78.3428
+    },
+    "specialties": {
+      "neurosurgery": 5,
+      "burnUnit": 0,
+      "cardiothoracic": 4,
+      "cardiology": 3,
+      "orthopedics": 0,
+      "generalSurgery": 4,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 4
+    }
+  },
+  {
+    "id": "hosp_007",
+    "name": "Medicover Hospitals, HITEC City",
+    "location": {
+      "lat": 17.4483,
+      "lng": 78.3809
+    },
+    "specialties": {
+      "neurosurgery": 3,
+      "burnUnit": 0,
+      "cardiothoracic": 2,
+      "cardiology": 2,
+      "orthopedics": 2,
+      "generalSurgery": 3,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  },
+  {
+    "id": "hosp_008",
+    "name": "Yashoda Hospitals, Somajiguda",
+    "location": {
+      "lat": 17.4239,
+      "lng": 78.4612
+    },
+    "specialties": {
+      "neurosurgery": 4,
+      "burnUnit": 0,
+      "cardiothoracic": 3,
+      "cardiology": 3,
+      "orthopedics": 3,
+      "generalSurgery": 4,
+      "plasticSurgery": 2
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 3
+    }
+  },
+  {
+    "id": "hosp_009",
+    "name": "Continental Hospitals, Gachibowli",
+    "location": {
+      "lat": 17.411,
+      "lng": 78.3489
+    },
+    "specialties": {
+      "neurosurgery": 3,
+      "burnUnit": 0,
+      "cardiothoracic": 2,
+      "cardiology": 2,
+      "orthopedics": 2,
+      "generalSurgery": 3,
+      "plasticSurgery": 0
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  },
+  {
+    "id": "hosp_010",
+    "name": "PACE Hospitals, HITEC City",
+    "location": {
+      "lat": 17.4453,
+      "lng": 78.3772
+    },
+    "specialties": {
+      "neurosurgery": 2,
+      "burnUnit": 0,
+      "cardiothoracic": 2,
+      "cardiology": 2,
+      "orthopedics": 2,
+      "generalSurgery": 2,
+      "plasticSurgery": 1
+    },
+    "resources": {
+      "ctScan": true,
+      "cathLab": true,
+      "bloodBank": true,
+      "otSlots": 2
+    }
+  }
+]
